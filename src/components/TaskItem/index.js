@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { withStyles, Typography } from '@material-ui/core';
-import styles from './styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,10 +7,11 @@ import Grid from '@material-ui/core/Grid';
 import Icon from '@material-ui/core/Icon';
 import Fab from '@material-ui/core/Fab';
 import PropTypes from 'prop-types';
+import styles from './styles';
 
 class TaskItem extends Component {
   render() {
-    var { classes, task, status } = this.props;
+    const { classes, task, status } = this.props;
     return (
       <Card className={classes.card}>
         <CardContent>
